@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Servlet of time and date</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap" rel="stylesheet">
+<style>
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+	color : #000;
+	font-family: 'Urbanist', sans-serif;
+}
+body{
+	height : 100vh;
+	width : 100vw;
+	display : flex;
+	justify-content : center;
+	align-items: center;
+	background-image : linear-gradient( #2193b0 , #6dd5ed );
+}
+.time{
+	background-color : #cc2b5e;
+	padding : 15px;
+	border-radius : 7px;
+	margin : 7px;
+	box-shadow : 3px 3px 5px black;
+	cursor : pointer; 
+	font-size: 1.5rem;
+}
+.time:hover{
+	box-shadow : none;
+}
+</style>
+</head>
+<body>
+	<form action="getDate" method="post">
+		<input type="submit" name="submit" value="Get Time" class = "time">
+	</form>
+</body>
+</html>
